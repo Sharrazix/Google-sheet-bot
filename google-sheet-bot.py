@@ -3,14 +3,14 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 
-bot = telebot.TeleBot('5881037037:AAHgeRwG2QcLfd-pnIHjkHGiww9oSW6wOIo')
+bot = telebot.TeleBot('Add_your_token_here')
 
 
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
 
 
-creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope) #You need to use service account to run this script
 
     
 client = gspread.authorize(creds)
